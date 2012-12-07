@@ -44,7 +44,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_versioned
-  camping (>= 1.4.152)
+  camping
   diffr
   responder
   wrap
