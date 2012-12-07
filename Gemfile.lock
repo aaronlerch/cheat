@@ -1,6 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    ParseTree (2.1.1)
+      RubyInline (>= 3.6.0)
+      hoe (>= 1.4.0)
+    RubyInline (3.11.4)
+      ZenTest (~> 4.3)
+    ZenTest (4.8.3)
     activemodel (3.0.17)
       activesupport (= 3.0.17)
       builder (~> 2.1.2)
@@ -13,6 +19,10 @@ GEM
     activesupport (3.0.17)
     acts_as_versioned (0.6.0)
       activerecord (~> 3.0.0.beta4)
+    ambition (0.5.4)
+      ParseTree (= 2.1.1)
+      rubigen (= 1.1.1)
+      ruby2ruby (= 1.1.8)
     arel (2.0.10)
     builder (2.1.2)
     camping (2.1.523)
@@ -25,6 +35,8 @@ GEM
       sass (~> 3.1)
     diffr (0.0.1)
     fssm (0.2.9)
+    hoe (3.3.1)
+      rake (>= 0.8, < 11.0)
     i18n (0.5.0)
     mab (0.0.2)
     map (6.2.0)
@@ -34,6 +46,11 @@ GEM
       compass (>= 0.12.2)
       rake
       sass (>= 3.2.0)
+    rubigen (1.1.1)
+      activesupport (>= 1.4.4)
+    ruby2ruby (1.1.8)
+      ParseTree
+      hoe (>= 1.4.0)
     sass (3.2.3)
     tzinfo (0.3.35)
     wrap (1.5.0)
@@ -44,6 +61,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_versioned
+  ambition
   camping
   diffr
   responder
