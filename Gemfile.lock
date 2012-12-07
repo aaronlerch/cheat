@@ -65,6 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   ZenTest (= 4.6.0)
+  activerecord
   acts_as_versioned
   ambition
   camping

@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'camping'
+gem 'activerecord'
 gem 'acts_as_versioned'
 gem 'wrap'
 gem 'diffr'
