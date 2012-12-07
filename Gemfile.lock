@@ -35,9 +35,11 @@ GEM
       sass (~> 3.1)
     diffr (0.0.1)
     fssm (0.2.9)
-    hoe (3.3.1)
-      rake (>= 0.8, < 11.0)
+    hoe (1.5.3)
+      rake (>= 0.8.1)
+      rubyforge (>= 1.0.0)
     i18n (0.5.0)
+    json_pure (1.7.5)
     mab (0.0.2)
     map (6.2.0)
     rack (1.4.1)
@@ -51,6 +53,8 @@ GEM
     ruby2ruby (1.1.8)
       ParseTree
       hoe (>= 1.4.0)
+    rubyforge (2.0.4)
+      json_pure (>= 1.1.7)
     sass (3.2.3)
     tzinfo (0.3.35)
     wrap (1.5.0)
@@ -65,5 +69,6 @@ DEPENDENCIES
   ambition
   camping
   diffr
+  hoe (~> 1.5.1)
   responder
   wrap

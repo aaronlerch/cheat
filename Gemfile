@@ -7,5 +7,6 @@ gem 'diffr'
 gem 'responder'
 gem 'ambition'
 
-# Hack because of Heroku Cedar stack incompatibility
+# Hacks because of Heroku Cedar stack incompatibility
 gem 'ZenTest', '4.6.0'
+gem 'hoe', '~> 1.5.1'
