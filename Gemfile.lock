@@ -6,7 +6,7 @@ GEM
       hoe (>= 1.4.0)
     RubyInline (3.11.4)
       ZenTest (~> 4.3)
-    ZenTest (4.8.3)
+    ZenTest (4.6.0)
     activemodel (3.0.17)
       activesupport (= 3.0.17)
       builder (~> 2.1.2)
@@ -60,6 +60,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ZenTest (= 4.6.0)
   acts_as_versioned
   ambition
   camping
