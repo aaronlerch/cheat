@@ -21,7 +21,7 @@
 #   Cheat Lake, a nearby resevoir
 #   Cheat Mountain, one of the highest mountains in the Alleghenies
 #
-%w[rubygems camping camping/db erb open-uri acts_as_versioned wrap diffr responder ambition].each { |f| require f }
+%w[rubygems camping erb open-uri acts_as_versioned wrap diffr responder ambition].each { |f| require f }
 gem 'camping', '>=1.4.152'
 
 Camping.goes :Cheat
@@ -48,7 +48,7 @@ module Cheat::Models
 
   class SetUpUsTheCheat < V 1.0
     def self.up
-      create_table :cheat_sheets, :force => true do |t|
+      create_table Sheet.cheat_sheets, :force => true do |t|
         t.column :id,         :integer,   :null => false
         t.column :title,      :string,    :null => false
         t.column :body,       :text
@@ -59,7 +59,7 @@ module Cheat::Models
       Sheet.reset_column_information
     end
     def self.down
-      drop_table :cheat_sheets
+      drop_table Sheet.cheat_sheets
       Sheet.drop_versioned_table
     end
   end
